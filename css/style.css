@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  position: relative;
+}
+
+.start-button {
+  position: absolute;
+  left: 48%;
+}
+
+.refresh-button {
+  visibility: hidden;
+  position: absolute;
+  left: 48%;
+}
+
+.card-panel {
+  height: 55vh;
+  margin-top: 2rem;
+}
+
+.fikt {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.uklo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.btn1 {
+  margin-top: 3rem;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.btn2 {
+  margin-top: 3rem;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.btn3 {
+  margin-top: 8px;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.btn4 {
+  margin-top: 8px;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Tableti */
+@media (max-width: 768px) {
+  body {
+    align-content: center;
+    text-align: center;
+  }
+  .card-panel {
+    margin-top: 11vh;
+  }
+  .uklo {
+    width: 60px;
+  }
+  .fikt {
+    width: 150px;
+  }
+}
+
+/* Telefoni */
+@media (max-width: 600px) {
+  body {
+    align-content: center;
+    text-align: center;
+  }
+  .start-button {
+    left: 42%;
+  }
+  .refresh-button {
+    left: 42%;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .btn1,
+  .btn2,
+  .btn3,
+  .btn4 {
+    font-size: 13px;
+    padding-left: 5px;
+  }
+  .card-panel {
+    margin-top: 16vh;
+    height: 65vh;
+  }
+  .uklo {
+    width: 50px;
+  }
+  .fikt {
+    width: 130px;
+  }
+}
